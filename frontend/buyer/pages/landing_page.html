@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/landing_page.css" />
+</head>
+<body>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <nav>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#" class="active">Shop</a>
+      <a href="#">Contact us</a>
+    </div>
+    <div class="nav-icons">
+      <!-- Person icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+          d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+      </svg>
+      <!-- Search icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+          d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"/>
+      </svg>
+      <!-- Cart icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+          d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0"/>
+      </svg>
+    </div>
+  </nav>
+
+  <!-- ══════════════ HERO CAROUSEL ══════════════ -->
+  <div class="hero">
+    <div class="hero-track" id="heroTrack">
+
+      <!-- Slide 1 -->
+      <div class="hero-slide">
+        <img src="../../assets/pictures/landingpage1.jpg" alt="Hero slide 1" id="heroImg1" />
+        <div class="hero-caption">
+          <p class="brand-label">Brand of the Product</p>
+          <h1>Sample Caption<br>Sample</h1>
+          <button class="btn-discover">Discover now</button>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <img src="../../assets/pictures/landingpage2.jpg" alt="Hero slide 2" />
+        <div class="hero-caption">
+          <p class="brand-label">Brand of the Product</p>
+          <h1>Sample Caption<br>Sample</h1>
+          <button class="btn-discover">Discover now</button>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <img src="../../assets/pictures/landingpage3.jpg" alt="Hero slide 3" />
+        <div class="hero-caption">
+          <p class="brand-label">Brand of the Product</p>
+          <h1>Sample Caption<br>Sample</h1>
+          <button class="btn-discover">Discover now</button>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="hero-slide">
+        <img src="../../assets/pictures/landningpage4.jpg" alt="Hero slide 4" />
+        <div class="hero-caption">
+          <p class="brand-label">Brand of the Product</p>
+          <h1>Sample Caption<br>Sample</h1>
+          <button class="btn-discover">Discover now</button>
+        </div>
+      </div>
+
+    </div><!-- /hero-track -->
+
+    <button class="hero-btn prev" id="heroPrev">&#8249;</button>
+    <button class="hero-btn next" id="heroNext">&#8250;</button>
+  </div><!-- /hero -->
+
+  <!-- ══════════════ NEW ARRIVALS ══════════════ -->
+  <div class="section">
+    <h2 class="section-title">New Arrivals</h2>
+    <div class="scroll-row-wrapper">
+      <div class="scroll-row" id="newArrivalsRow">
+
+        <!-- Card 1 -->
+        <div class="product-card">
+          <img src="" alt="Women's Coat Long Sleeve Coat" />
+          <div class="product-card-body">
+            <p class="product-name">Women's Coat Long<br>Sleeve Coat</p>
+          </div>
+          <div class="product-card-footer">
+            <div class="product-meta">
+              <div class="color-dots">
+                <span class="dot" style="background:#c0392b;"></span>
+                <span class="dot" style="background:#111;"></span>
+              </div>
+              <span class="rating">★ 4.5 (100 Reviews)</span>
+            </div>
+            <span class="product-price">₱ 2,000.00</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card">
+          <img src="" alt="Women's Coat Long Sleeve Coat" />
+          <div class="product-card-body">
+            <p class="product-name">Women's Coat Long<br>Sleeve Coat</p>
+          </div>
+          <div class="product-card-footer">
+            <div class="product-meta">
+              <div class="color-dots">
+                <span class="dot" style="background:#c0392b;"></span>
+                <span class="dot" style="background:#111;"></span>
+                <span class="dot" style="background:#fff; border:1px solid #aaa;"></span>
+              </div>
+              <span class="rating">★ 4.5 (100 Reviews)</span>
+            </div>
+            <span class="product-price">₱ 2,000.00</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card">
+          <img src="" alt="Women's Coat Long Sleeve Coat" />
+          <div class="product-card-body">
+            <p class="product-name">Women's Coat Long<br>Sleeve Coat</p>
+          </div>
+          <div class="product-card-footer">
+            <div class="product-meta">
+              <div class="color-dots">
+                <span class="dot" style="background:#c0392b;"></span>
+                <span class="dot" style="background:#111;"></span>
+                <span class="dot" style="background:#fff; border:1px solid #aaa;"></span>
+              </div>
+              <span class="rating">★ 4.5 (100 Reviews)</span>
+            </div>
+            <span class="product-price">₱ 2,000.00</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-card">
+          <img src="" alt="Women's Coat Long Sleeve Coat" />
+          <div class="product-card-body">
+            <p class="product-name">Women's Coat Long<br>Sleeve Coat</p>
+          </div>
+          <div class="product-card-footer">
+            <div class="product-meta">
+              <div class="color-dots">
+                <span class="dot" style="background:#c0392b;"></span>
+                <span class="dot" style="background:#111;"></span>
+              </div>
+              <span class="rating">★ 4.5 (100 Reviews)</span>
+            </div>
+            <span class="product-price">₱ 2,000.00</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="product-card">
+          <img src="" alt="Women's Coat Long Sleeve Coat" />
+          <div class="product-card-body">
+            <p class="product-name">Women's Coat Long<br>Sleeve Coat</p>
+          </div>
+          <div class="product-card-footer">
+            <div class="product-meta">
+              <div class="color-dots">
+                <span class="dot" style="background:#c0392b;"></span>
+                <span class="dot" style="background:#111;"></span>
+              </div>
+              <span class="rating">★ 4.5 (100 Reviews)</span>
+            </div>
+            <span class="product-price">₱ 2,000.00</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="product-card">
+          <img src="" alt="Women's Coat Long Sleeve Coat" />
+          <div class="product-card-body">
+            <p class="product-name">Women's Coat Long<br>Sleeve Coat</p>
+          </div>
+          <div class="product-card-footer">
+            <div class="product-meta">
+              <div class="color-dots">
+                <span class="dot" style="background:#c0392b;"></span>
+                <span class="dot" style="background:#111;"></span>
+              </div>
+              <span class="rating">★ 4.5 (100 Reviews)</span>
+            </div>
+            <span class="product-price">₱ 2,000.00</span>
+          </div>
+        </div>
+
+      </div><!-- /scroll-row -->
+    </div>
+  </div><!-- /section -->
+
+  <!-- ══════════════ BOTTOM BANNER GRID ══════════════ -->
+  <div class="banner-section">
+    <div class="banner-grid">
+
+      <!-- Left tall banner -->
+      <div class="banner-item banner-left">
+        <img src="" alt="Banner left" />
+        <div class="banner-caption">
+          <p class="brand-label">Brand of the Product</p>
+          <h2>Sample Caption</h2>
+          <button class="btn-discover">Discover now</button>
+        </div>
+      </div>
+
+      <!-- Top-right banner -->
+      <div class="banner-item">
+        <img src="" alt="Banner top right" />
+        <div class="banner-caption">
+          <p class="brand-label">Brand of the Product</p>
+          <h2>Sample Caption</h2>
+          <button class="btn-discover">Discover now</button>
+        </div>
+      </div>
+
+      <!-- Bottom-right banner -->
+      <div class="banner-item">
+        <img src="" alt="Banner bottom right" />
+        <div class="banner-caption">
+          <p class="brand-label">Brand of the Product</p>
+          <h2>Sample Caption</h2>
+          <button class="btn-discover">Discover now</button>
+        </div>
+      </div>
+
+    </div><!-- /banner-grid -->
+  </div><!-- /banner-section -->
+
+  <!-- ══════════════ SCRIPTS ══════════════ -->
+  <script>
+    // ── Navbar scroll effect ──
+    const navbar = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 10);
+    });
+
+    // ── Hero carousel ──
+    const track   = document.getElementById('heroTrack');
+    const slides  = Array.from(track.querySelectorAll('.hero-slide'));
+    const prevBtn = document.getElementById('heroPrev');
+    const nextBtn = document.getElementById('heroNext');
+    let current   = 0;
+    let animating = false;
+
+    // Position all slides off-screen to the right initially
+    slides.forEach((slide, i) => {
+      if (i !== 0) slide.style.transform = 'translateX(100%)';
+    });
+    slides[0].classList.add('active');
+
+    function goTo(index, direction) {
+      if (animating) return;
+      animating = true;
+
+      const next = (index + slides.length) % slides.length;
+      const incoming = slides[next];
+      const outgoing = slides[current];
+
+      // Place incoming slide on the correct side before animating
+      incoming.style.transition = 'none';
+      incoming.style.transform = direction === 'next' ? 'translateX(100%)' : 'translateX(-100%)';
+
+      // Force reflow so the starting position is painted before transition kicks in
+      incoming.offsetHeight;
+
+      incoming.style.transition = '';
+      incoming.style.transform = 'translateX(0%)';
+      outgoing.style.transform = direction === 'next' ? 'translateX(-100%)' : 'translateX(100%)';
+
+      incoming.classList.add('active');
+
+      setTimeout(() => {
+        outgoing.classList.remove('active');
+        current = next;
+        animating = false;
+      }, 500);
+    }
+
+    prevBtn.addEventListener('click', () => goTo(current - 1, 'prev'));
+    nextBtn.addEventListener('click', () => goTo(current + 1, 'next'));
+
+    // Auto-advance every 5 s
+    setInterval(() => goTo(current + 1, 'next'), 5000);
+  </script>
+</body>
+</html>
