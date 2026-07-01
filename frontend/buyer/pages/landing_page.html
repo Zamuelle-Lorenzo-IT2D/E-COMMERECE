@@ -244,61 +244,50 @@
     </div><!-- /banner-grid -->
   </div><!-- /banner-section -->
 
-  <!-- ══════════════ SCRIPTS ══════════════ -->
-  <script>
-    // ── Navbar scroll effect ──
-    const navbar = document.querySelector('nav');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 10);
-    });
+  <!-- ══════════════ LOGIN MODAL ══════════════ -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal-container">
 
-    // ── Hero carousel ──
-    const track   = document.getElementById('heroTrack');
-    const slides  = Array.from(track.querySelectorAll('.hero-slide'));
-    const prevBtn = document.getElementById('heroPrev');
-    const nextBtn = document.getElementById('heroNext');
-    let current   = 0;
-    let animating = false;
+      <!-- Left side: text + illustration -->
+      <div class="modal-left">
+        <div class="modal-left-text">
+          <h2>Welcome to <span class="modal-brand">E-COMMERECE</span><br>The Largest Wholesale<br>Marketplace</h2>
+          <p>One-stop wholesale business solution of imported products. We ensure product quality, on time delivery and hassle free service.</p>
+        </div>
+        <div class="modal-illustration">
+          <img src="../../assets/pictures/login_icon.jpg" alt="E-Commerce illustration" />
+        </div>
+      </div>
 
-    // Position all slides off-screen to the right initially
-    slides.forEach((slide, i) => {
-      if (i !== 0) slide.style.transform = 'translateX(100%)';
-    });
-    slides[0].classList.add('active');
+      <!-- Right side: login form -->
+      <div class="modal-box">
+        <button class="modal-close" id="modalClose">&#10005;</button>
+        <h2 class="modal-title">Login</h2>
 
-    function goTo(index, direction) {
-      if (animating) return;
-      animating = true;
+        <form class="modal-form" onsubmit="return false;">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" placeholder="" autocomplete="email" />
 
-      const next = (index + slides.length) % slides.length;
-      const incoming = slides[next];
-      const outgoing = slides[current];
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="" autocomplete="current-password" />
 
-      // Place incoming slide on the correct side before animating
-      incoming.style.transition = 'none';
-      incoming.style.transform = direction === 'next' ? 'translateX(100%)' : 'translateX(-100%)';
+          <button type="submit" class="modal-btn-login">Login</button>
 
-      // Force reflow so the starting position is painted before transition kicks in
-      incoming.offsetHeight;
+          <div class="modal-or"><span>or</span></div>
 
-      incoming.style.transition = '';
-      incoming.style.transform = 'translateX(0%)';
-      outgoing.style.transform = direction === 'next' ? 'translateX(-100%)' : 'translateX(100%)';
+          <button type="button" class="modal-btn-register">Create new account</button>
 
-      incoming.classList.add('active');
+          <p class="modal-terms">
+            By logging in, you agree to ECOMM
+            <a href="#">Terms of Service</a> &amp; <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
 
-      setTimeout(() => {
-        outgoing.classList.remove('active');
-        current = next;
-        animating = false;
-      }, 500);
-    }
+    </div>
+  </div>
 
-    prevBtn.addEventListener('click', () => goTo(current - 1, 'prev'));
-    nextBtn.addEventListener('click', () => goTo(current + 1, 'next'));
 
-    // Auto-advance every 5 s
-    setInterval(() => goTo(current + 1, 'next'), 5000);
-  </script>
+  <script src="../js/landing_page.js"></script>
 </body>
 </html>
