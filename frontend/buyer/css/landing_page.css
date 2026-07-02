@@ -39,7 +39,21 @@ nav.scrolled {
 .nav-icons svg { width: 20px; height: 20px; cursor: pointer; color: #fff; }
 .nav-icons svg:hover { color: #ddd; }
 
-/* when scrolled — switch text/icons to dark */
+.nav-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #fff;
+  transition: color .3s ease;
+  pointer-events: none;
+  user-select: none;
+}
+nav.scrolled .nav-brand {
+  color: #C92B25;
+}
 nav.scrolled .nav-links a { color: #111; }
 nav.scrolled .nav-links a:hover { color: #c0392b; }
 nav.scrolled .nav-icons svg { color: #111; }
